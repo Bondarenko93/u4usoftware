@@ -674,7 +674,9 @@ li {
 }
 
 @media (max-width:800px) {
-
+    .contact-block {
+        min-width: 100%;
+    }
     /* .swiper-button-prev,
     .swiper-button-next {
         display: none;
@@ -763,12 +765,15 @@ li {
 
     .nav .nav-links a {
         display: block;
-        width: 100%;
+        width: 94%;
         padding: 20px;
         font-size: 20px;
         line-height: 45px;
     }
-
+    .nav-links .btn {
+  
+        text-align: center;
+    }
     .nav #nav-check:not(:checked)~.nav-links {
         height: 0px;
     }
