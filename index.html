@@ -1,84 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<title>Coming Soon 3</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
+
 <body>
-	
-	
-	<div class="bg-img1 size1 flex-w flex-c-m p-t-55 p-b-55 p-l-15 p-r-15" style="background-image: url('images/bg01.jpg');">
-		<div class="wsize1 bor1 bg1 p-t-175 p-b-45 p-l-15 p-r-15 respon1">
-			<div class="wrappic1">
-				<h1>u4u software</h1>
-			</div>
+    <header class="nav">
+        <div class="_container">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+                <a href="#" class="nav-logo">
+                    <img src="./src/img/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
 
-			<p class="txt-center m1-txt1 p-t-33 p-b-68">
-				Welcome to u4u software engineering website. At the moment we are preparing a new version of the site.
-				For all cooperation proposals, please contact <a href="mailto:contact@u4usoftware.com">contact@u4usoftware.com</a>.
-				<br>
-				Best wishes.
-			</p>
- 
-			
-		</div>
-	</div>
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contacts">Contacts</a>
+                <a href="#subscribe" class="btn">Subscribe</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero-section">
+            <div class="_container">
+                <div class="text-media">
+                    <div class="text-block">
+                        <h1>10 Years Experience in IT</h1>
+                        <p class="bold">We can assist you with web & mobile development
+                            of any complexity.</p>
+                        <p>
+                            Our core industries are: e-commerce, mobile development, integration payment systems and
+                            third party systems, support large systems.
+                        </p>
+                        <div class="card-solution">
+                            <img src="./src/icons/vector-zig.svg" alt="">
+                            <h3>Best Solutions for IT System development.</h3>
+                            <p>We use the best development processes Agile (Scrum, Kanban) and time-tested cycle
+                                software
+                                development.</p>
+                        </div>
+                    </div>
+
+                    <div class="media-block">
+                        <img src="./src/img/hero-img.png" alt="">
+                    </div>
+                    <div class="card-solution mobile">
+                        <img src="./src/icons/vector-zig.svg" alt="">
+                        <h3>Best Solutions for IT System development.</h3>
+                        <p>We use the best development processes Agile (Scrum, Kanban) and time-tested cycle
+                            software
+                            development.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="servises" class="servises">
+            <div class="_container servises-wraper">
+                <div class="servises-description">
+                    <h3>Service</h3>
+                    <p class="bold">We are oriented on the goal and on the process.</p>
+                    <p>Based on your current project & business goals we'll provide you with appropriate team
+                        composition
+                        and transparent workflow. You’ll receive a daily report on the work until the product has been
+                        tested and is ready to be launched.
+                        Then every two weeks we will update the original product
+                        and release any new changes or products you request.
+                    </p>
+                    <p class="bold">For the product, we can install three environments:</p>
+                    <div class="environments">
+                        <div class="option">
+                            <p class="icon-lamp">Production - for business use</p>
+                        </div>
+                        <div class="option">
+                            <p class="icon-dock">Testing - for product testing and approval before deployment to
+                                production.
+                            </p>
+                        </div>
+                        <div class="option">
+                            <p class="icon-dev">Dev (Optional) - for active development by a team of several developers,
+                                and the first stage of testing.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="expertise" class="expertise">
+                    <h3>Expertise</h3>
+                    <div class="technology-wraper">
+                        <div class="technology front ">
+                            <h6>Front End</h6>
+                            <div class="technology-name-wrap">
+                                <span>React</span>
+                                <span>Next.js</span>
+                                <span>Angular</span>
+                                <span>JQuery</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+                        </div>
+                        <div class="technology back ">
+                            <h6>Black End</h6>
+                            <div class="technology-name-wrap">
+                                <span>Node.js</span>
+                                <span>Java</span>
+                                <span>Maven</span>
+                                <span>Spring</span>
+                                <span>AWS</span>
+                                <span>Docker</span>
+                                <span>Kubernetes</span>
+                            </div>
+                        </div>
+                        <div class="technology mobile ">
+                            <h6>Mobile </h6>
+                            <div class="technology-name-wrap">
+                                <span>Android</span>
+                                <span>Java</span>
+                                <span>IOS</span>
+
+                            </div>
+                        </div>
+                        <div class="technology design ">
+                            <h6>Design</h6>
+                            <div class="technology-name-wrap">
+                                <span>Photoshop</span>
+                                <span>Figma</span>
+                                <span>Balsamiq</span>
+                                <span>Ilustrator</span>
+                                <span>Sketch</span>
+                                <span>Zeplin</span>
+                            </div>
+                        </div>
+                        <div class="technology database ">
+                            <h6>Databases</h6>
+                            <div class="technology-name-wrap">
+                                <span>MySQL</span>
+                                <span>MSSQL</span>
+                                <span>Figma</span>
+                                <span>Balsamiq</span>
+                                <span>PostgreSQL</span>
+                                <span>Redis</span>
+                                <span>neo4j</span>
+                                <span>Mongo DB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portolio" class="portolio-slider ">
+            <div class="_container">
+                <h3 class="text-center">Portfolio</h3>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="portfolio-card">
+                                <div class="portfolio-image"><img src="./src/img/portfolio-img.png" alt="">
+                                    <div class="portfoloi-logo"><img src="./src/img/4u4 (Copy)/image 15.png" alt="">
+                                    </div>
+                                </div>
+                                <h3>Project name</h3>
+                                <p>The rybatext site will help a designer, layout designer, webmaster to generate
+                                    several </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio-card">
+                                <div class="portfolio-image"><img src="./src/img/portfolio-img(2).png" alt="">
+                                    <div class="portfoloi-logo"><img src="./src/img/4u4 (Copy)/image 3.png" alt="">
+                                    </div>
+                                </div>
+                                <h3>Project name</h3>
+                                <p>The rybatext site will help a designer, layout designer, webmaster to generate
+                                    several </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio-card">
+                                <div class="portfolio-image"><img src="./src/img/portfolio-img(3).png" alt="">
+                                    <div class="portfoloi-logo"><img src="./src/img/4u4 (Copy)/image 4.png" alt="">
+                                    </div>
+                                </div>
+                                <h3>Project name</h3>
+                                <p>The rybatext site will help a designer, layout designer, webmaster to generate
+                                    several </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio-card">
+                                <div class="portfolio-image"><img src="./src/img/portfolio-img(4).png" alt="">
+                                    <div class="portfoloi-logo"><img src="./src/img/4u4 (Copy)/image 8.png" alt="">
+                                    </div>
+                                </div>
+                                <h3>Project name</h3>
+                                <p>The rybatext site will help a designer, layout designer, webmaster to generate
+                                    several </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio-card">
+                                <div class="portfolio-image"><img src="./src/img/portfolio-img(5).png" alt="">
+                                    <div class="portfoloi-logo"><img src="./src/img/4u4 (Copy)/image 15.png" alt="">
+                                    </div>
+                                </div>
+                                <h3>Project name</h3>
+                                <p>The rybatext site will help a designer, layout designer, webmaster to generate
+                                    several </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio-card">
+                                <div class="portfolio-image"><img src="./src/img/portfolio-img(4).png" alt="">
+                                    <div class="portfoloi-logo"><img src="./src/img/4u4 (Copy)/image 8.png" alt="">
+                                    </div>
+                                </div>
+                                <h3>Project name</h3>
+                                <p>The rybatext site will help a designer, layout designer, webmaster to generate
+                                    several </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio-card">
+                                <div class="portfolio-image"><img src="./src/img/portfolio-img(5).png" alt="">
+                                    <div class="portfoloi-logo"><img src="./src/img/4u4 (Copy)/Mask group.png" alt="">
+                                    </div>
+                                </div>
+                                <h3>Project name</h3>
+                                <p>The rybatext site will help a designer, layout designer, webmaster to generate
+                                    several </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio-card">
+                                <div class="portfolio-image"><img src="./src/img/portfolio-img(6).png" alt="">
+                                    <div class="portfoloi-logo"><img src="./src/img/4u4 (Copy)/image 9.png" alt="">
+                                    </div>
+                                </div>
+                                <h3>Project name</h3>
+                                <p>The rybatext site will help a designer, layout designer, webmaster to generate
+                                    several </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio-card">
+                                <div class="portfolio-image"><img src="./src/img/portfolio-img.png" alt="">
+                                    <div class="portfoloi-logo"><img src="./src/img/4u4 (Copy)/image 15.png" alt="">
+                                    </div>
+                                </div>
+                                <h3>Project name</h3>
+                                <p>The rybatext site will help a designer, layout designer, webmaster to generate
+                                    several </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="swiper-button-next "></div>
+            <div class="swiper-button-prev "></div>
+        </section>
+        <section id="contact" class="contact-section">
+            <div class="_container">
+                <div class="contact-wraper">
+                    <div class="contact-block">
+                        <h3>Contact Info
+                        </h3>
+                        <div class="contact-box">
+                            <div class="contact location">
+                                <img src="./src/icons/point.svg" alt="">
+                                <a href="#">
+                                    <p class="country">USA</p>
+                                    <p class="state">Florida</p>
+                                    <p class="city">Panama City Beach</p>
 
 
+                                </a>
 
-	
+                            </div>
+                            <div class="contact">
+                                <img src="./src/icons/phone.svg" alt="">
+                                <a href="tel:+4733378901">
+                                    +1 850 672-2801
+                                </a>
 
-<!--===============================================================================================-->	
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/countdowntime/moment.min.js"></script>
-	<script src="vendor/countdowntime/moment-timezone.min.js"></script>
-	<script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-	<script>
-		$('.cd100').countdown100({
-			/*Set Endtime here*/
-			/*Endtime must be > current time*/
-			endtimeYear: 0,
-			endtimeMonth: 0,
-			endtimeDate: 35,
-			endtimeHours: 18,
-			endtimeMinutes: 0,
-			endtimeSeconds: 0,
-			timeZone: "" 
-			// ex:  timeZone: "America/New_York"
-			//go to " http://momentjs.com/timezone/ " to get timezone
-		});
-	</script>
-<!--===============================================================================================-->
-	<script src="vendor/tilt/tilt.jquery.min.js"></script>
-	<script >
-		$('.js-tilt').tilt({
-			scale: 1.1
-		})
-	</script>
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
+                            </div>
+                            <div class="contact">
+                                <img src="./src/icons/email.svg" alt="">
+                                <a href="mailto:contact@u4usoftware.com">
+                                    contact@u4usoftware.com
+                                </a>
 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-block">
+                        <h3>Deal with Us</h3>
+                        <form id="form" name="form">
+                            <div class="top-row">
+                                <label for="mail">E-mail*
+                                    <input type="email" id="mail" name="mail" value="" placeholder="Type your e-mail">
+                                </label>
+                                <label for="tel">Phone number*
+                                    <input type="tel" id="tel" name="tel" placeholder="Type your phone number">
+                                </label>
+                            </div>
+                            <div class="bottom-row">
+                                <label for="message">Your message</label>
+                                <textarea placeholder="Please type your messege here"></textarea>
+
+                            </div>
+                            <button class="btn g-recaptcha" 
+        data-sitekey="6LdzowAmAAAAAOVE12LpJCLTye7dyzdAVHG9NzLL" 
+        data-callback='onSubmit' 
+        data-action='submit'>Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="_container">
+            <div class="footer-wrap">
+                <img src="./src/img/logo.svg" alt="">
+                <div class="footer-nav">
+                    <ul class="footer-nav-list">
+                        
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copy text-center">
+        <p>Copyright ⓒ 2023 U4U Software Engineering LLC</p>
+    </div>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+    <script>
+        function onSubmit(token) {
+          document.getElementById("form").submit();
+        }
+      </script>
 </body>
+
 </html>
