@@ -9,7 +9,30 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Home - u4usoftware.com</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('MCCDYYv9dJaw6Mdak');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+    
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 
 <style>
@@ -316,7 +339,7 @@
                     </div>
                     <div id="subscribe" class="form-block">
                         <h3>Deal with Us</h3>
-                        <form id="form" name="form">
+                        <form id="contact-form" name="contact-form">
                             <div class="top-row">
                                 <label for="mail">E-mail*
                                     <input type="email" id="mail" name="mail" value="" placeholder="Type your e-mail">
@@ -327,7 +350,7 @@
                             </div>
                             <div class="bottom-row">
                                 <label for="message">Your message</label>
-                                <textarea placeholder="Please type your messege here"></textarea>
+                                <textarea name="message" placeholder="Please type your messege here"></textarea>
 
                             </div>
                             <button class="btn g-recaptcha" 
