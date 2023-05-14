@@ -388,9 +388,10 @@
        //   document.getElementById("contact-form").submit();
           event.preventDefault();
                 // generate a five digit number for the contact_number variable
-    
+  let  form =   document.getElementById('contact-form');
+  console.log(emailjs);
                 // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
+                emailjs.sendForm('contact_service', 'contact_form', form)
                     .then(function() {
                         console.log('SUCCESS!');
                     }, function(error) {
