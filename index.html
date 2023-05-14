@@ -386,6 +386,16 @@
     <script>
         function onSubmit(token) {
           document.getElementById("contact-form").submit();
+          event.preventDefault();
+                // generate a five digit number for the contact_number variable
+    
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
         }
       </script>
 </body>
