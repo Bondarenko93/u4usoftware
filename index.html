@@ -17,22 +17,7 @@
             emailjs.init('MCCDYYv9dJaw6Mdak');
         })();
     </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-    
-                // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
+ 
 </head>
 
 <style>
@@ -389,9 +374,10 @@
           event.preventDefault();
                 // generate a five digit number for the contact_number variable
   let  form =   document.getElementById('contact-form');
+  'service_lnkztjw'
   console.log(emailjs);
                 // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', form)
+                emailjs.sendForm('service_lnkztjw', 'template_69ray5l', form)
                     .then(function() {
                         console.log('SUCCESS!');
                     }, function(error) {
