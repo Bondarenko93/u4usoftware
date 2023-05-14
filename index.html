@@ -337,6 +337,7 @@
 
                             </div>
                             <button class="btn g-recaptcha" 
+                            id="send_form"
         data-sitekey="6LdzowAmAAAAAOVE12LpJCLTye7dyzdAVHG9NzLL" 
         data-callback='onSubmit' 
         data-action='submit'>Send</button>
@@ -374,13 +375,15 @@
           event.preventDefault();
                 // generate a five digit number for the contact_number variable
   let  form =   document.getElementById('contact-form');
- 
+                document.getElementById('send_form').setAttribute("disabled", "");
                 // these IDs from the previous steps
                 emailjs.sendForm('service_lnkztjw', 'template_69ray5l', form)
                     .then(function() {
                         console.log('SUCCESS!');
+                        document.getElementById('send_form').removeAttribute('disabled');
                     }, function(error) {
                         console.log('FAILED...', error);
+                        document.getElementById('send_form').removeAttribute('disabled');
                     });
         }
       </script>
