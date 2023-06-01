@@ -478,11 +478,11 @@ section.hero-section {
 
 }
 
-.technology.mobile {
+.technology.list-mobile {
     border-color: var(--blue);
 }
 
-.technology.mobile span {
+.technology.list-mobile span {
     background-color: var(--blue);
 }
 
